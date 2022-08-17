@@ -12,7 +12,7 @@ export default function HeaderTitle({ title }: Props) {
       </div>
       <div className="flex-1 text-center font-bold text-xl">{title}</div>
       <div>
-        <MagnifyingGlass size={28} />
+        <MagnifyingGlass size={26} />
       </div>
     </div>
   );

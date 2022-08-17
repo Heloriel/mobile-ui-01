@@ -3,5 +3,5 @@ type Props = {
 };
 
 export default function ScreenContent({ children }: Props) {
-  return <div className="flex-1 bg-white rounded-t-3xl">{children}</div>;
+  return <div className="flex flex-col flex-1 bg-white rounded-t-3xl p-4">{children}</div>;
 }
