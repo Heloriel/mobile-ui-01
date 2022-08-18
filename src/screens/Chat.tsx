@@ -1,5 +1,6 @@
 import { CaretLeft, PaperPlaneRight } from "phosphor-react";
 import { useNavigate } from "react-router-dom";
+import ChatBubble from "../components/ChatBubble/ChatBubble";
 
 export default function Chat() {
   const navigate = useNavigate();
@@ -15,7 +16,13 @@ export default function Chat() {
           <img src="https://github.com/Heloriel.png" className="rounded-full w-8 h-8 object-cover" />
         </div>
       </div>
-      <div className="flex-1">aaa</div>
+      <div className="flex w-full flex-col px-4">
+        <ChatBubble>aaaa</ChatBubble>
+        <ChatBubble>BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB</ChatBubble>
+        <ChatBubble>acccccccccccccccccccccccccccccc</ChatBubble>
+        <ChatBubble>aaaaeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</ChatBubble>
+        <ChatBubble>aaatttttttttttttttttttttttttttttttttttta</ChatBubble>
+      </div>
       <div className="flex w-full p-2">
         <div className="flex flex-1 pr-2">
           <input type="text" name="" id="" className="flex-1 border border-project-primary rounded-full px-4" placeholder="Message..." />
