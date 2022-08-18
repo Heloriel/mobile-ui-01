@@ -5,3 +5,7 @@
 :root {
   @apply bg-project-primary font-lato;
 }
+
+.canva {
+  @apply flex flex-col min-h-screen justify-center;
+}

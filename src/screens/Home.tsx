@@ -10,7 +10,7 @@ export default function Home() {
   const msg = "Lorem ipsun dolort sit amet";
 
   return (
-    <div className="flex min-h-screen flex-col justify-center ">
+    <div className="canva">
       <Header title="Home" />
       <ScreenContent>
         <div className="flex w-full justify-between">

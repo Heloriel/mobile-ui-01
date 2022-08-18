@@ -36,7 +36,7 @@ export default function FriendChatLink({ name, msgPreview, unreadCount = 0, time
   }, []);
 
   return (
-    <a className="flex w-full" href="#">
+    <a className="flex w-full" href="/chat">
       <li className="flex w-full items-center justify-between">
         <div>
           <FriendProfile src={dog} unread={unreadCount} />
