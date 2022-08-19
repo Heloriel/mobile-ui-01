@@ -1,6 +1,6 @@
 import Header from "../components/Header/Header";
 import ScreenContent from "../components/ScreenContent/ScreenContent";
-import { SlidersHorizontal } from "phosphor-react";
+import { Camera, MagnifyingGlass, SlidersHorizontal } from "phosphor-react";
 import SmallCatTitle from "../components/SmallCatTitle/SmallCatTitle";
 import FriendChatLink from "../components/FriendChatLink/FriendChatLink";
 import SeeMore from "../components/SeeMore/SeeMore";
@@ -11,7 +11,7 @@ export default function Home() {
 
   return (
     <div className="canva">
-      <Header title="Home" />
+      <Header title="Home" leftIcon={<Camera size={28} />} rightIcon={<MagnifyingGlass size={26} />} />
       <ScreenContent>
         <div className="flex w-full justify-between">
           <div className="text-2xl font-bold">All Chats</div>
