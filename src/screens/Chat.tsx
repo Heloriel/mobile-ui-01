@@ -16,12 +16,12 @@ export default function Chat() {
           <img src="https://github.com/Heloriel.png" className="rounded-full w-8 h-8 object-cover" />
         </div>
       </div>
-      <div className="flex w-full flex-col px-4">
-        <ChatBubble>aaaa</ChatBubble>
-        <ChatBubble>BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB</ChatBubble>
-        <ChatBubble>acccccccccccccccccccccccccccccc</ChatBubble>
-        <ChatBubble>aaaaeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</ChatBubble>
-        <ChatBubble>aaatttttttttttttttttttttttttttttttttttta</ChatBubble>
+      <div className="flex flex-1 justify-end w-full flex-col px-4">
+        <ChatBubble incoming>Hello!</ChatBubble>
+        <ChatBubble incoming>How are you today?</ChatBubble>
+        <ChatBubble>I'm fine, thanks!</ChatBubble>
+        <ChatBubble incoming>Happy to hear! 😊</ChatBubble>
+        <ChatBubble>😊</ChatBubble>
       </div>
       <div className="flex w-full p-2">
         <div className="flex flex-1 pr-2">
