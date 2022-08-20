@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import { useEffect, useState } from "react";
-import FriendProfileLink from "../../atoms/FriendProfileLink/FriendProfile";
+import FriendProfile from "../../atoms/FriendProfile/FriendProfile";
 
 type Props = {
   name: string;
@@ -39,7 +39,7 @@ export default function FriendChatLink({ name, msgPreview, unreadCount = 0, time
     <a className="flex w-full" href="/chat">
       <li className="flex w-full items-center justify-between">
         <div>
-          <FriendProfileLink src={dog} unread={unreadCount} />
+          <FriendProfile src={dog} unread={unreadCount} />
         </div>
         <div className="flex-1 px-4">
           <span className={classNames("block", { "font-bold": unreadCount })}>{name}</span>

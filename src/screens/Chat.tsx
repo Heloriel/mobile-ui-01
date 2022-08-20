@@ -1,5 +1,6 @@
 import { CaretLeft, PaperPlaneRight } from "phosphor-react";
 import { useNavigate } from "react-router-dom";
+import BackButton from "../components/atoms/BackButton/BackButton";
 import ChatBubble from "../components/atoms/ChatBubble/ChatBubble";
 
 export default function Chat() {
@@ -8,13 +9,11 @@ export default function Chat() {
   return (
     <div className="flex flex-col w-full min-h-screen bg-white items-start">
       <div className="flex w-full py-6 px-4 justify-between items-center">
-        <a role={"button"} onClick={() => navigate(-1)}>
-          <CaretLeft size={22} color="#191C3F" />
+        <BackButton color="#000" />
+        <a href="/profile">Matheus Andrade</a>
+        <a href="/profile">
+          <img src="https://github.com/Heloriel.png" className="rounded-full w-10 h-10 object-cover" />
         </a>
-        <div>Matheus Andrade</div>
-        <div>
-          <img src="https://github.com/Heloriel.png" className="rounded-full w-8 h-8 object-cover" />
-        </div>
       </div>
       <div className="flex flex-1 justify-end w-full flex-col px-4">
         <ChatBubble incoming>Hello!</ChatBubble>

@@ -4,10 +4,10 @@ export default function NavTabs() {
       <a href="#" className="bg-project-primary rounded-full flex-1 text-center py-2">
         Chat
       </a>
-      <a href="#" className="flex-1 text-center py-2">
+      <a href="#" className="flex-1 text-center py-2 rounded-full">
         Status
       </a>
-      <a href="#" className="flex-1 text-center py-2">
+      <a href="#" className="flex-1 text-center py-2 rounded-full">
         Call
       </a>
     </div>

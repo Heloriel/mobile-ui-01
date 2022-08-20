@@ -6,13 +6,14 @@ import FriendChatLink from "../components/organisms/FriendChatLink/FriendChatLin
 import SeeMore from "../components/atoms/SeeMore/SeeMore";
 import GroupChatLink from "../components/organisms/GroupChatLink/GroupChatLink";
 import Community from "../components/atoms/Community/Community";
+import SearchButton from "../components/atoms/SearchButton/SearchButton";
 
 export default function Home() {
   const msg = "Lorem ipsun dolort sit amet";
 
   return (
     <div className="canva">
-      <Header title="Home" leftIcon={<Camera size={28} />} rightIcon={<MagnifyingGlass size={26} />} />
+      <Header title="Home" leftIcon={<Camera size={28} />} rightIcon={<SearchButton />} />
       <ScreenContent>
         <div className="flex w-full justify-between">
           <div className="text-2xl font-bold">All Chats</div>

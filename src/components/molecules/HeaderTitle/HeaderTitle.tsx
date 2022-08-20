@@ -1,5 +1,7 @@
 import classNames from "classnames";
-import { Camera, MagnifyingGlass } from "phosphor-react";
+import { useContext } from "react";
+import { Context, ISearchContext } from "../../../contexts/SearchContext";
+import SearchBar from "../../atoms/SearchBar/SearchBar";
 
 type Props = {
   title: string;
@@ -9,11 +11,13 @@ type Props = {
 
 export default function HeaderTitle({ title, leftIcon, rightIcon }: Props) {
   const noRightIcon = !rightIcon;
+  const context = useContext<ISearchContext>(Context);
+
   return (
-    <div className="flex items-center w-full h-8 mb-6">
-      <div>{leftIcon}</div>
-      <div className={classNames({ "-ml-[22px]": noRightIcon }, "flex-1 text-center font-bold text-xl")}>{title}</div>
-      <div>{rightIcon}</div>
+    <div className="flex items-center w-full h-10 mb-6">
+      <div className="flex">{leftIcon}</div>
+      <div className={classNames({ "-ml-[22px]": noRightIcon }, "flex-1 text-center font-bold text-xl")}>{context.isSearchOpen ? <SearchBar /> : title}</div>
+      <div className="flex">{rightIcon}</div>
     </div>
   );
 }

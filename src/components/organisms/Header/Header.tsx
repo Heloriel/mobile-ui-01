@@ -1,3 +1,4 @@
+import { SearchContext } from "../../../contexts/SearchContext";
 import HeaderTitle from "../../molecules/HeaderTitle/HeaderTitle";
 import NavTabs from "../../molecules/NavTabs/NavTabs";
 
@@ -10,15 +11,17 @@ type Props = {
 
 export default function Header({ title, disableNavTabs, leftIcon, rightIcon }: Props) {
   return (
-    <div className="flex flex-col w-full text-white px-4 py-6">
-      <HeaderTitle title={title} leftIcon={leftIcon} rightIcon={rightIcon} />
-      {disableNavTabs ? (
-        <></>
-      ) : (
-        <div className="flex w-full px-6">
-          <NavTabs />
-        </div>
-      )}
-    </div>
+    <SearchContext>
+      <div className="flex flex-col w-full text-white px-4 py-6">
+        <HeaderTitle title={title} leftIcon={leftIcon} rightIcon={rightIcon} />
+        {disableNavTabs ? (
+          <></>
+        ) : (
+          <div className="flex w-full px-6">
+            <NavTabs />
+          </div>
+        )}
+      </div>
+    </SearchContext>
   );
 }
