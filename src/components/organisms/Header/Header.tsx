@@ -1,5 +1,5 @@
-import HeaderTitle from "../HeaderTitle/HeaderTitle";
-import NavTabs from "../NavTabs/NavTabs";
+import HeaderTitle from "../../molecules/HeaderTitle/HeaderTitle";
+import NavTabs from "../../molecules/NavTabs/NavTabs";
 
 type Props = {
   title: string;

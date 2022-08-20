@@ -1,7 +1,7 @@
 import { ArrowSquareOut, CaretLeft } from "phosphor-react";
-import Header from "../components/Header/Header";
-import ScreenContent from "../components/ScreenContent/ScreenContent";
-import UserProfile from "../components/UserProfile/UserProfile";
+import Header from "../components/organisms/Header/Header";
+import ScreenContent from "../components/templates/ScreenContent/ScreenContent";
+import UserProfile from "../components/organisms/UserProfile/UserProfile";
 
 export default function Profile() {
   return (

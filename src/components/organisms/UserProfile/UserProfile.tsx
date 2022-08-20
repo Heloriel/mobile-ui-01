@@ -1,5 +1,5 @@
-import SmallCatTitle from "../SmallCatTitle/SmallCatTitle";
-import UserStatus from "../UserStatus/UserStatus";
+import SmallCatTitle from "../../atoms/SmallCatTitle/SmallCatTitle";
+import UserStatus from "../../molecules/UserStatus/UserStatus";
 
 export default function UserProfile() {
   return (

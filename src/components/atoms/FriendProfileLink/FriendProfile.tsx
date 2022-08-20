@@ -5,7 +5,7 @@ type Props = {
   unread?: number;
 };
 
-export default function FriendProfile({ src, unread }: Props) {
+export default function FriendProfileLink({ src, unread }: Props) {
   const hasUnreadMessage = !unread;
 
   return (

@@ -1,6 +1,6 @@
 import { CaretLeft, PaperPlaneRight } from "phosphor-react";
 import { useNavigate } from "react-router-dom";
-import ChatBubble from "../components/ChatBubble/ChatBubble";
+import ChatBubble from "../components/atoms/ChatBubble/ChatBubble";
 
 export default function Chat() {
   const navigate = useNavigate();

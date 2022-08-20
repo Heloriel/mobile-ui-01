@@ -1,11 +1,11 @@
-import Header from "../components/Header/Header";
-import ScreenContent from "../components/ScreenContent/ScreenContent";
+import Header from "../components/organisms/Header/Header";
+import ScreenContent from "../components/templates/ScreenContent/ScreenContent";
 import { Camera, MagnifyingGlass, SlidersHorizontal } from "phosphor-react";
-import SmallCatTitle from "../components/SmallCatTitle/SmallCatTitle";
-import FriendChatLink from "../components/FriendChatLink/FriendChatLink";
-import SeeMore from "../components/SeeMore/SeeMore";
-import GroupChatLink from "../components/GroupChatLink/GroupChatLink";
-import Community from "../components/Community/Community";
+import SmallCatTitle from "../components/atoms/SmallCatTitle/SmallCatTitle";
+import FriendChatLink from "../components/organisms/FriendChatLink/FriendChatLink";
+import SeeMore from "../components/atoms/SeeMore/SeeMore";
+import GroupChatLink from "../components/organisms/GroupChatLink/GroupChatLink";
+import Community from "../components/atoms/Community/Community";
 
 export default function Home() {
   const msg = "Lorem ipsun dolort sit amet";
@@ -34,9 +34,9 @@ export default function Home() {
         </ul>
         <SeeMore />
         <SmallCatTitle title="Communities" />
-        <div className="grid grid-cols-2 gap-2">
+        <div className="grid grid-cols-3 gap-2">
           <Community id={"01"} name="Developers" />
-          <Community id={"01"} name="Developers" />
+          <Community id={"01"} name="UI/UX" />
         </div>
       </ScreenContent>
     </div>
