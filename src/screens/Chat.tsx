@@ -15,22 +15,18 @@ export default function Chat() {
           <img src="https://github.com/Heloriel.png" className="rounded-full w-10 h-10 object-cover" />
         </a>
       </div>
-      <div className="flex flex-1 justify-end w-full flex-col px-4">
+      <div className="flex flex-1 justify-end w-full flex-col px-4 overflow-y-scroll">
         <ChatBubble incoming>Hello!</ChatBubble>
         <ChatBubble incoming>How are you today?</ChatBubble>
         <ChatBubble>I'm fine, thanks!</ChatBubble>
         <ChatBubble incoming>Happy to hear! 😊</ChatBubble>
         <ChatBubble>😊</ChatBubble>
       </div>
-      <div className="flex w-full p-2">
-        <div className="flex flex-1 pr-2">
-          <input type="text" name="" id="" className="flex-1 border border-project-primary rounded-full px-4" placeholder="Message..." />
-        </div>
-        <div className="flex">
-          <a href="#" role={"button"} className="flex items-center justify-center leading-none p-2 rounded-full bg-project-primary">
-            <PaperPlaneRight size={28} color="#fff" weight="fill" />
-          </a>
-        </div>
+      <div className="flex w-full p-4 space-x-2">
+        <input type="text" name="" id="" className="min-w-[100px] flex flex-1 border border-project-primary rounded-full px-4" placeholder="Message..." />
+        <a href="#" role={"button"} className="flex items-center justify-center leading-none p-2 rounded-full bg-project-primary">
+          <PaperPlaneRight size={28} color="#fff" weight="fill" />
+        </a>
       </div>
     </div>
   );
