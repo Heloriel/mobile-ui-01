@@ -1,6 +1,6 @@
 import Header from "../components/organisms/Header/Header";
 import ScreenContent from "../components/templates/ScreenContent/ScreenContent";
-import { Camera, MagnifyingGlass, SlidersHorizontal } from "phosphor-react";
+import { Camera, SlidersHorizontal } from "phosphor-react";
 import SmallCatTitle from "../components/atoms/SmallCatTitle/SmallCatTitle";
 import FriendChatLink from "../components/organisms/FriendChatLink/FriendChatLink";
 import SeeMore from "../components/atoms/SeeMore/SeeMore";
@@ -36,8 +36,8 @@ export default function Home() {
         <SeeMore />
         <SmallCatTitle title="Communities" />
         <div className="grid grid-cols-3 gap-2">
-          <Community id={"01"} name="Developers" />
-          <Community id={"01"} name="UI/UX" />
+          <Community id={"01"} name="DEVELOPERS" />
+          <Community id={"02"} name="MUSIC" />
         </div>
       </ScreenContent>
     </div>

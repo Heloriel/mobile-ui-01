@@ -10,7 +10,7 @@ type Props = {
 };
 
 export default function FriendChatLink({ name, msgPreview, unreadCount = 0, time }: Props) {
-  const [dog, setDog] = useState("");
+  const [dog, setDog] = useState("./src/assets/user_default.jpg");
 
   function truncate(str: string, n: number) {
     return str.length > n ? str.slice(0, n - 1) + " ..." : str;

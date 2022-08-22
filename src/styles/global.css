@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  @apply bg-project-primary font-lato;
+  @apply bg-project-primary font-poppins;
 }
 
 .canva {
