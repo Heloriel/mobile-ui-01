@@ -13,7 +13,7 @@ export default function FriendChatLink({ name, msgPreview, unreadCount = 0, time
   const [dog, setDog] = useState("./src/assets/user_default.jpg");
 
   function truncate(str: string, n: number) {
-    return str.length > n ? str.slice(0, n - 1) + " ..." : str;
+    return str.length > n ? str.slice(0, n - 1) : str;
   }
 
   function fetchDog<T>(url: string) {
@@ -38,14 +38,14 @@ export default function FriendChatLink({ name, msgPreview, unreadCount = 0, time
   return (
     <a className="flex w-full" href="/chat">
       <li className="flex w-full items-center justify-between">
-        <div>
+        <div className="mr-4">
           <FriendProfile src={dog} unread={unreadCount} />
         </div>
-        <div className="flex-1 px-4">
+        <div className="inline-block flex-1 overflow-ellipsis overflow-hidden whitespace-nowrap">
           <span className={classNames("block", { "font-bold": unreadCount })}>{name}</span>
-          <span className="block font-sm text-zinc-500 overflow-hidden">{truncate(msgPreview, 24)}</span>
+          <span className=" w-full font-sm text-zinc-500 ">{truncate(msgPreview, 50)}</span>
         </div>
-        <span className="font-bold text-zinc-500 text-sm">{time}</span>
+        <span className="font-bold text-zinc-500 text-sm ml-4">{time}</span>
       </li>
     </a>
   );

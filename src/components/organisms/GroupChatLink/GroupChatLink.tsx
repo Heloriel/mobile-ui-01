@@ -39,16 +39,16 @@ export default function GroupChatLink({ name, msgPreview, unreadCount = 0, time,
   return (
     <a className="flex w-full" href="#">
       <li className="flex w-full items-center justify-between">
-        <div>
+        <div className="mr-4">
           <GroupProfile src={dog} unread={unreadCount} />
         </div>
-        <div className="flex-1 px-4">
+        <div className="inline-block flex-1 overflow-ellipsis overflow-hidden whitespace-nowrap">
           <span className={classNames("block", { "font-bold": unreadCount })}>{name}</span>
-          <span className="block font-sm text-zinc-500 overflow-hidden">
-            <b>{user}:</b> {truncate(msgPreview, 20)}
+          <span className="font-sm text-zinc-500">
+            <b>{user}:</b> {truncate(msgPreview, 50)}
           </span>
         </div>
-        <span className="font-bold text-zinc-500 text-sm">{time}</span>
+        <span className="font-bold text-zinc-500 text-sm ml-4">{time}</span>
       </li>
     </a>
   );
