@@ -1,12 +1,12 @@
-import Header from "../components/organisms/Header/Header";
+import Header from "../components/composite/Header/Header";
 import ScreenContent from "../components/templates/ScreenContent/ScreenContent";
 import { Camera, SlidersHorizontal } from "phosphor-react";
-import SmallCatTitle from "../components/atoms/SmallCatTitle/SmallCatTitle";
-import FriendChatLink from "../components/organisms/FriendChatLink/FriendChatLink";
-import SeeMore from "../components/atoms/SeeMore/SeeMore";
-import GroupChatLink from "../components/organisms/GroupChatLink/GroupChatLink";
-import Community from "../components/atoms/Community/Community";
-import SearchButton from "../components/atoms/SearchButton/SearchButton";
+import SmallCatTitle from "../components/basic/SmallCatTitle/SmallCatTitle";
+import FriendChatLink from "../components/composite/FriendChatLink/FriendChatLink";
+import SeeMore from "../components/basic/SeeMore/SeeMore";
+import GroupChatLink from "../components/composite/GroupChatLink/GroupChatLink";
+import Community from "../components/basic/Community/Community";
+import SearchButton from "../components/basic/SearchButton/SearchButton";
 
 export default function Home() {
   const msg = "Lorem ipsun dolort sit amet consecteur adpsin elit";

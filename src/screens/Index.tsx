@@ -1,4 +1,4 @@
-import Button from "../components/atoms/Button/Button";
+import Button from "../components/basic/Button/Button";
 
 export default function Index() {
   return (

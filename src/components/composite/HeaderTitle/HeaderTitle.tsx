@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import { useContext } from "react";
 import { Context, ISearchContext } from "../../../contexts/SearchContext";
-import SearchBar from "../../atoms/SearchBar/SearchBar";
+import SearchBar from "../../basic/SearchBar/SearchBar";
 
 type Props = {
   title: string;

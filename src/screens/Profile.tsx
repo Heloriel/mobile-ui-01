@@ -1,10 +1,10 @@
 import { ArrowSquareOut, CaretLeft } from "phosphor-react";
-import Header from "../components/organisms/Header/Header";
+import Header from "../components/composite/Header/Header";
 import ScreenContent from "../components/templates/ScreenContent/ScreenContent";
-import UserProfile from "../components/organisms/UserProfile/UserProfile";
-import BackButton from "../components/atoms/BackButton/BackButton";
-import ProfileLastMessages from "../components/organisms/ProfileLastMessages/ProfileLastMessages";
-import SmallCatTitle from "../components/atoms/SmallCatTitle/SmallCatTitle";
+import UserProfile from "../components/composite/UserProfile/UserProfile";
+import BackButton from "../components/basic/BackButton/BackButton";
+import ProfileLastMessages from "../components/composite/ProfileLastMessages/ProfileLastMessages";
+import SmallCatTitle from "../components/basic/SmallCatTitle/SmallCatTitle";
 
 export default function Profile() {
   return (

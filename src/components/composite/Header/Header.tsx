@@ -1,6 +1,6 @@
 import { SearchContext } from "../../../contexts/SearchContext";
-import HeaderTitle from "../../molecules/HeaderTitle/HeaderTitle";
-import NavTabs from "../../molecules/NavTabs/NavTabs";
+import HeaderTitle from "../../composite/HeaderTitle/HeaderTitle";
+import NavTabs from "../../composite/NavTabs/NavTabs";
 
 type Props = {
   title: string;

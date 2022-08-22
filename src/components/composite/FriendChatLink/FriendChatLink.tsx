@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import { useEffect, useState } from "react";
-import FriendProfile from "../../atoms/FriendProfile/FriendProfile";
+import FriendProfile from "../../basic/FriendProfile/FriendProfile";
 
 type Props = {
   name: string;

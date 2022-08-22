@@ -1,4 +1,4 @@
-import ChatBubble from "../../atoms/ChatBubble/ChatBubble";
+import ChatBubble from "../../basic/ChatBubble/ChatBubble";
 
 type Props = {
   message: string;
