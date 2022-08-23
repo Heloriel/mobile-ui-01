@@ -1,10 +1,13 @@
 import { BrowserRouter } from "react-router-dom";
+import { NavigationContext } from "./contexts/NavigationContext";
 import Router from "./Routes";
 
 function App() {
   return (
     <BrowserRouter>
-      <Router />
+      <NavigationContext>
+        <Router />
+      </NavigationContext>
     </BrowserRouter>
   );
 }
