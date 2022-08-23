@@ -16,7 +16,7 @@ export default function AllChats() {
           <SlidersHorizontal size={32} />
         </div>
       </div>
-      <SmallCatTitle title="FRIENDS" className="my-4" />
+      <SmallCatTitle title="FRIENDS" className="my-4 w-full" />
       <ul className="flex flex-col w-full space-y-3">
         <FriendChatLink name="John Doe" msgPreview={msg} unreadCount={2} time="14:03" />
         <FriendChatLink name="Jane Doe" msgPreview={msg} unreadCount={10} time="10:15" />
