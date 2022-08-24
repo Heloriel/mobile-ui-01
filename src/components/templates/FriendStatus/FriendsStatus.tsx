@@ -7,9 +7,9 @@ export default function FriendsStatus() {
     <div>
       <div className="flex w-full justify-between items-center">
         <span className="text-2xl font-bold">All Chats</span>
-        <span>
+        <a href="#">
           <Eye size={24} />
-        </span>
+        </a>
       </div>
       <SmallCatTitle title="NEW" className="my-4" />
       <ul className="flex flex-col w-full space-y-3">

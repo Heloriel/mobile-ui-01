@@ -1,4 +1,5 @@
 import classNames from "classnames";
+import { ThumbsUp } from "phosphor-react";
 import { useEffect, useState } from "react";
 import FriendProfile from "../../basic/FriendProfile/FriendProfile";
 
@@ -14,7 +15,7 @@ export default function FriendStatusLink({ name, time, viewed = false }: Props) 
   function fetchDog<T>(url: string) {
     return fetch(url).then((response) => {
       if (!response.ok) {
-        throw new Error(response.statusText);
+        return;
       }
       return response.json();
     });
@@ -26,21 +27,24 @@ export default function FriendStatusLink({ name, time, viewed = false }: Props) 
         setDog(message);
       })
       .catch((error) => {
-        return "";
+        return;
       });
   }, []);
 
   return (
-    <a className="flex w-full" href="/chat">
-      <li className="flex w-full items-center justify-between">
+    <li className="flex w-full items-center justify-between">
+      <a className="flex w-full" href="/chat">
         <div className="mr-4">
-          <img src={dog} alt="" className={classNames({ grayscale: viewed, "border-4 border-project-secondary": !viewed }, "h-12 w-12 rounded-full")} />
+          <img src={dog} alt="" className={classNames({ grayscale: viewed, "border-4 border-project-secondary": !viewed }, "h-12 w-12 rounded-full object-cover object-center")} />
         </div>
         <div className="inline-block flex-1 overflow-ellipsis overflow-hidden whitespace-nowrap">
           <span className={classNames("block", { "font-bold": !viewed })}>{name}</span>
           <span className=" w-full font-sm text-zinc-500 ">{time}</span>
         </div>
-      </li>
-    </a>
+      </a>
+      <a className="mr-4 p-2" href="#">
+        <ThumbsUp size={28} />
+      </a>
+    </li>
   );
 }

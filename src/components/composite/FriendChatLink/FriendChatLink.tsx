@@ -19,7 +19,7 @@ export default function FriendChatLink({ name, msgPreview, unreadCount = 0, time
   function fetchDog<T>(url: string) {
     return fetch(url).then((response) => {
       if (!response.ok) {
-        throw new Error(response.statusText);
+        return;
       }
       return response.json();
     });
@@ -31,12 +31,12 @@ export default function FriendChatLink({ name, msgPreview, unreadCount = 0, time
         setDog(message);
       })
       .catch((error) => {
-        return "";
+        return;
       });
   }, []);
 
   return (
-    <a className="flex w-full" href="/chat">
+    <a className="flex w-full py-2" href="/chat">
       <li className="flex w-full items-center justify-between">
         <div className="mr-4">
           <FriendProfile src={dog} unread={unreadCount} />

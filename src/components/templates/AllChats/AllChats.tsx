@@ -17,7 +17,7 @@ export default function AllChats() {
         </div>
       </div>
       <SmallCatTitle title="FRIENDS" className="my-4 w-full" />
-      <ul className="flex flex-col w-full space-y-3">
+      <ul className="flex flex-col w-full">
         <FriendChatLink name="John Doe" msgPreview={msg} unreadCount={2} time="14:03" />
         <FriendChatLink name="Jane Doe" msgPreview={msg} unreadCount={10} time="10:15" />
         <FriendChatLink name="Mr. Nobody" msgPreview={msg} time="22:50" />
