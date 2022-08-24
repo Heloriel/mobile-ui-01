@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  @apply bg-project-primary font-poppins;
+  @apply font-poppins bg-project-primary;
 }
 
 .canva {
