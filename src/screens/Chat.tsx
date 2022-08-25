@@ -1,33 +1,30 @@
-import { CaretLeft, PaperPlaneRight } from "phosphor-react";
 import { useNavigate } from "react-router-dom";
-import BackButton from "../components/basic/BackButton/BackButton";
 import ChatBubble from "../components/basic/ChatBubble/ChatBubble";
+import ChatHeading from "../components/composite/ChatHeading/ChatHeading";
+import MessageInput from "../components/composite/MessageInput/MessageInput";
 
 export default function Chat() {
-  const navigate = useNavigate();
-
   return (
     <div className="flex flex-col w-full min-h-screen bg-white items-start">
-      <div className="flex w-full py-6 px-4 justify-between items-center">
-        <BackButton color="#000" />
-        <a href="/profile">Matheus Andrade</a>
-        <a href="/profile">
-          <img src="https://github.com/Heloriel.png" className="rounded-full w-10 h-10 object-cover" />
-        </a>
-      </div>
+      <ChatHeading />
       <div className="flex flex-1 justify-end w-full flex-col px-4 overflow-y-scroll">
         <ChatBubble incoming>Hello!</ChatBubble>
         <ChatBubble incoming>How are you today?</ChatBubble>
         <ChatBubble>I'm fine, thanks!</ChatBubble>
         <ChatBubble incoming>Happy to hear! 😊</ChatBubble>
         <ChatBubble>😊</ChatBubble>
+        <ChatBubble>Loren</ChatBubble>
+        <ChatBubble>Ipsun</ChatBubble>
+        <ChatBubble incoming>Dolor</ChatBubble>
+        <ChatBubble>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</ChatBubble>
+        <ChatBubble>Sit</ChatBubble>
+        <ChatBubble incoming>Amet</ChatBubble>
+        <ChatBubble>Consecteur</ChatBubble>
+        <ChatBubble incoming>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</ChatBubble>
+        <ChatBubble>Adpsing</ChatBubble>
+        <ChatBubble>Elit</ChatBubble>
       </div>
-      <div className="flex w-full p-4 space-x-2">
-        <input type="text" name="" id="" className="min-w-[100px] flex flex-1 border border-project-primary rounded-full px-4" placeholder="Message..." />
-        <a href="#" role={"button"} className="flex items-center justify-center leading-none p-2 rounded-full bg-project-primary">
-          <PaperPlaneRight size={28} color="#fff" weight="fill" />
-        </a>
-      </div>
+      <MessageInput />
     </div>
   );
 }

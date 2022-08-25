@@ -1,11 +1,12 @@
 import FriendCallLink from "../../composite/FriendCallLink/FriendCallLink";
 import { X } from "phosphor-react";
+import ScreenTitle from "../../basic/ScreenTitle/ScreenTitle";
 
 export default function FriendsCalls() {
   return (
     <div>
       <div className="flex w-full justify-between items-center">
-        <span className="text-2xl font-bold">All Chats</span>
+        <ScreenTitle title="Calls" />
         <a href="#">
           <X size={24} />
         </a>

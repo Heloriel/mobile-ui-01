@@ -1,5 +1,5 @@
-import { PhoneIncoming, PhoneSlash, PhoneX } from "phosphor-react";
 import { useEffect, useState } from "react";
+import CallStatus from "../../basic/CallStatus/CallStatus";
 import FriendProfile from "../../basic/FriendProfile/FriendProfile";
 
 type Props = {
@@ -41,27 +41,7 @@ export default function FriendCallLink({ name, status, time }: Props) {
           <span className="font-bold text-zinc-500 text-sm">{time}</span>
         </div>
         <div>
-          {status == "accepted" ? (
-            <div className="rounded-lg p-1 bg-green-600">
-              <PhoneIncoming color="white" weight="fill" size={20} />
-            </div>
-          ) : (
-            <></>
-          )}
-          {status == "lost" ? (
-            <div className="rounded-lg p-1 bg-red-600">
-              <PhoneX color="#fff" size={20} />
-            </div>
-          ) : (
-            <></>
-          )}
-          {status == "rejected" ? (
-            <div className="rounded-lg p-1 bg-yellow-600">
-              <PhoneSlash color="#fff" size={20} />
-            </div>
-          ) : (
-            <></>
-          )}
+          <CallStatus status={status} />
         </div>
       </li>
     </a>

@@ -2,7 +2,7 @@ import Button from "../components/basic/Button/Button";
 
 export default function Index() {
   return (
-    <div className="flex min-h-screen w-full flex-col justify-start">
+    <div className="canva justify-start">
       <div className="flex justify-center items-center overflow-hidden bg-[#f8f8f8] rounded-br-[8rem]">
         <img src="/images/chat.webp" alt="Chatting" className="w-64 h-64" />
       </div>

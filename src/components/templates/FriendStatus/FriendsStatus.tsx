@@ -1,4 +1,5 @@
 import { Eye } from "phosphor-react";
+import ScreenTitle from "../../basic/ScreenTitle/ScreenTitle";
 import SmallCatTitle from "../../basic/SmallCatTitle/SmallCatTitle";
 import FriendStatusLink from "../../composite/FriendStatusLink/FriendStatusLink";
 
@@ -6,7 +7,7 @@ export default function FriendsStatus() {
   return (
     <div>
       <div className="flex w-full justify-between items-center">
-        <span className="text-2xl font-bold">All Chats</span>
+        <ScreenTitle title="Friends Status" />
         <a href="#">
           <Eye size={24} />
         </a>

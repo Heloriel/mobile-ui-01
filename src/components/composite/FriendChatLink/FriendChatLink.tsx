@@ -43,7 +43,7 @@ export default function FriendChatLink({ name, msgPreview, unreadCount = 0, time
         </div>
         <div className="inline-block flex-1 overflow-ellipsis overflow-hidden whitespace-nowrap">
           <span className={classNames("block", { "font-bold": unreadCount })}>{name}</span>
-          <span className=" w-full font-sm text-zinc-500 ">{truncate(msgPreview, 50)}</span>
+          <span className="w-full font-sm text-zinc-500 ">{truncate(msgPreview, 50)}</span>
         </div>
         <span className="font-bold text-zinc-500 text-sm ml-4">{time}</span>
       </li>

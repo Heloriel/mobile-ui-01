@@ -1,5 +1,6 @@
 import { SlidersHorizontal } from "phosphor-react";
 import Community from "../../basic/Community/Community";
+import ScreenTitle from "../../basic/ScreenTitle/ScreenTitle";
 import SeeMore from "../../basic/SeeMore/SeeMore";
 import SmallCatTitle from "../../basic/SmallCatTitle/SmallCatTitle";
 import FriendChatLink from "../../composite/FriendChatLink/FriendChatLink";
@@ -11,7 +12,7 @@ export default function AllChats() {
   return (
     <div>
       <div className="flex w-full justify-between">
-        <div className="text-2xl font-bold">All Chats</div>
+        <ScreenTitle title="Chats" />
         <div>
           <SlidersHorizontal size={32} />
         </div>
