@@ -15,9 +15,9 @@ export default function HeaderTitle({ title, leftIcon, rightIcon }: Props) {
 
   return (
     <div className="flex items-center w-full h-10 mb-6">
-      <div className="flex">{leftIcon}</div>
-      <div className={classNames({ "-ml-[22px]": noRightIcon }, "flex-1 text-center font-bold text-xl")}>{context.isSearchOpen ? <SearchBar /> : title}</div>
-      <div className="flex">{rightIcon}</div>
+      <div className="flex flex-1">{leftIcon}</div>
+      <div className={classNames({ "-ml-[32px]": noRightIcon }, "flex-2 text-center font-bold text-xl")}>{context.isSearchOpen ? <SearchBar /> : title}</div>
+      <div className="flex flex-1 justify-end">{rightIcon}</div>
     </div>
   );
 }

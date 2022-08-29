@@ -10,7 +10,7 @@ import OpenExternalProfileButton from "../components/basic/OpenExternalProfileBu
 export default function Profile() {
   return (
     <div className="canva">
-      <Header title="Profile" disableNavTabs leftIcon={<BackButton />} rightIcon={<OpenExternalProfileButton url="https://github.com/Heloriel" />} />
+      <Header title="Profile" disableNavTabs leftIcon={<BackButton />} rightIcon={<OpenExternalProfileButton url="https://github.com/Heloriel" />}/>
       <UserProfile />
       <ScreenContent>
         <SmallCatTitle title="LAST MESSAGES" className="mb-2" />

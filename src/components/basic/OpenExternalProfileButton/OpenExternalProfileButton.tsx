@@ -9,8 +9,8 @@ type Props = {
 
 export default function SearchButton({ url, color = "#fff" }: Props) {
   return (
-    <a href={url}>
-      <ArrowSquareOut size={22} color={color} />
+    <a href={url} className="p-2">
+      <ArrowSquareOut size={24} color={color} />
     </a>
   );
 }
