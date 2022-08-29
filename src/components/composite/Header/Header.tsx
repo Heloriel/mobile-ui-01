@@ -14,13 +14,7 @@ export default function Header({ title, disableNavTabs, leftIcon, rightIcon }: P
     <SearchContext>
       <div className="flex flex-col w-full text-white px-4 py-6">
         <HeaderTitle title={title} leftIcon={leftIcon} rightIcon={rightIcon} />
-        {disableNavTabs ? (
-          <></>
-        ) : (
-          <div className="flex w-full px-6">
-            <NavTabs />
-          </div>
-        )}
+        {!disableNavTabs && <div className="flex w-full px-6"><NavTabs /></div>}
       </div>
     </SearchContext>
   );
