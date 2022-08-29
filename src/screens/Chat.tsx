@@ -12,7 +12,7 @@ export default function Chat() {
     return () => {
       scrollToBottom();
     };
-  }, [, ChatComponent]);
+  }, [ChatComponent]);
 
   let msgEnd: HTMLDivElement | null;
 

@@ -9,7 +9,7 @@ export default function FriendsStatus() {
       <div className="flex w-full justify-between items-center">
         <ScreenTitle title="Friends Status" />
         <a href="#">
-          <Eye size={24} />
+          <Eye size={28} />
         </a>
       </div>
       <SmallCatTitle title="NEW" className="my-4" />
