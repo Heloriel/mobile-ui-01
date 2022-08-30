@@ -5,7 +5,7 @@ type Props = {
   unread?: number;
 };
 
-export default function GroupProfile({ src, unread }: Props) {
+export function GroupProfile({ src, unread }: Props) {
   const hasUnreadMessage = !unread;
 
   return (

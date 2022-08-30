@@ -1,6 +1,7 @@
 import classNames from "classnames";
 import { useEffect, useState } from "react";
-import GroupProfile from "../GroupProfile/GroupProfile";
+import {GroupProfile} from "../GroupProfile/GroupProfile";
+import {truncate} from '../../../helpers/truncate';
 
 type Props = {
   name: string;
@@ -12,10 +13,6 @@ type Props = {
 
 export default function GroupChatLink({ name, msgPreview, unreadCount = 0, time, user }: Props) {
   const [dog, setDog] = useState("./src/assets/user_default.jpg");
-
-  function truncate(str: string, n: number) {
-    return str.length > n ? str.slice(0, n - 1) + " ..." : str;
-  }
 
   function fetchDog<T>(url: string) {
     return fetch(url).then((response) => {

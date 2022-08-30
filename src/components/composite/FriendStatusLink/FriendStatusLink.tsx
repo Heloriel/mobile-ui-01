@@ -1,7 +1,6 @@
 import classNames from "classnames";
 import { ThumbsUp } from "phosphor-react";
 import { useEffect, useState } from "react";
-import FriendProfile from "../../basic/FriendProfile/FriendProfile";
 
 type Props = {
   name: string;
