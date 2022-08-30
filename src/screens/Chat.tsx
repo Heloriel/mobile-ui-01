@@ -5,7 +5,7 @@ import MessageInput from "../components/composite/MessageInput/MessageInput";
 
 export default function Chat() {
   const scrollToBottom = () => {
-    msgEnd ? msgEnd.scrollIntoView({ behavior: "auto" }) : <></>;
+    msgEnd && msgEnd.scrollIntoView({ behavior: "auto" });
   };
 
   useEffect(() => {

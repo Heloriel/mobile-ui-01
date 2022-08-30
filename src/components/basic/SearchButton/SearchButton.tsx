@@ -14,18 +14,9 @@ export default function SearchButton({ color = "#fff" }: Props) {
   function handleClick() {
     context.setIsSearchOpen(!context.isSearchOpen);
   }
-
-  if (context.isSearchOpen) {
-    return (
-      <a role={"button"} onClick={handleClick}>
-        <X size={26} color={color} />
-      </a>
-    );
-  } else {
-    return (
-      <a role={"button"} onClick={handleClick}>
-        <MagnifyingGlass size={26} color={color} />
-      </a>
-    );
-  }
+  return (
+    <a role={"button"} onClick={handleClick}>
+      {context.isSearchOpen ? <X size={26} color={color} /> : <MagnifyingGlass size={26} color={color} /> }
+    </a>
+  )
 }

@@ -23,24 +23,24 @@ export default function AllChats() {
         <FriendChatLink name="Jane Doe" msgPreview={msg} unreadCount={10} time="10:15" />
         <FriendChatLink name="Mr. Nobody" msgPreview={msg} time="22:50" />
       </ul>
-      <SeeMore />
+      <SeeMore url="#" />
       <SmallCatTitle title="GROUP CHAT" className="my-4" />
       <ul className="flex flex-col w-full space-y-3">
         <GroupChatLink name="School" msgPreview={msg} unreadCount={2} time="14:03" user="John" />
         <GroupChatLink name="Work" msgPreview={msg} unreadCount={0} time="10:15" user="Jane" />
       </ul>
-      <SeeMore />
+      <SeeMore url="#" />
       <div className="flex justify-between mb-2 items-center">
         <div>
           <SmallCatTitle title="Communities" />
         </div>
         <div>
-          <SeeMore />
+          <SeeMore url="#" />
         </div>
       </div>
       <div className="grid grid-cols-2 gap-2">
-        <Community id={"01"} name="DEVELOPERS" />
-        <Community id={"02"} name="MUSIC" />
+        <Community url="#" id={"01"} name="DEVELOPERS" />
+        <Community url="#" id={"02"} name="MUSIC" />
       </div>
     </div>
   );
