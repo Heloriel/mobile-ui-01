@@ -10,8 +10,6 @@ import GroupChatLink from "../../composite/GroupChatLink/GroupChatLink";
 export default function AllChats() {
   const msg = "Lorem ipsun dolort sit amet consecteur adpsin elit";
 
-  const [userAvatar, setUserAvatar] = useState("./src/assets/user_default.jpg");
-
   return (
     <div>
       <div className="flex w-full justify-between">
@@ -22,15 +20,15 @@ export default function AllChats() {
       </div>
       <SmallCatTitle title="FRIENDS" className="my-4 w-full" />
       <ul className="flex flex-col w-full">
-        <FriendChatLink name="John Doe" msgPreview={msg} unreadCount={2} time="14:03" userAvatar={userAvatar} />
-        <FriendChatLink name="Jane Doe" msgPreview={msg} unreadCount={10} time="10:15" userAvatar={userAvatar} />
-        <FriendChatLink name="Mr. Nobody" msgPreview={msg} time="22:50" userAvatar={userAvatar} />
+        <FriendChatLink name="John Doe" msgPreview={msg} unreadCount={2} time="14:03" userAvatar="/images/profiles/01.jpg" />
+        <FriendChatLink name="Jane Doe" msgPreview={msg} unreadCount={10} time="10:15" userAvatar="/images/profiles/02.jpg" />
+        <FriendChatLink name="Mr. Nobody" msgPreview={msg} time="22:50" userAvatar="/images/profiles/03.jpg" />
       </ul>
       <SeeMore url="#" />
       <SmallCatTitle title="GROUP CHAT" className="my-4" />
       <ul className="flex flex-col w-full space-y-3">
-        <GroupChatLink name="School" msgPreview={msg} unreadCount={2} time="14:03" user="John" groupImage={userAvatar} />
-        <GroupChatLink name="Work" msgPreview={msg} unreadCount={0} time="10:15" user="Jane" groupImage={userAvatar}  />
+        <GroupChatLink name="School" msgPreview={msg} unreadCount={2} time="14:03" user="John" groupImage="/images/profiles/05.jpg" />
+        <GroupChatLink name="Work" msgPreview={msg} unreadCount={0} time="10:15" user="Jane" groupImage="/images/profiles/04.jpg"  />
       </ul>
       <SeeMore url="#" />
       <div className="flex justify-between mb-2 items-center">
