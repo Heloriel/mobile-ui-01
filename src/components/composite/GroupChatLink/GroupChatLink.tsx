@@ -9,35 +9,15 @@ type Props = {
   unreadCount?: number;
   time: string;
   user: string;
+  groupImage: string;
 };
 
-export default function GroupChatLink({ name, msgPreview, unreadCount = 0, time, user }: Props) {
-  const [dog, setDog] = useState("./src/assets/user_default.jpg");
-
-  function fetchDog<T>(url: string) {
-    return fetch(url).then((response) => {
-      if (!response.ok) {
-        throw new Error(response.statusText);
-      }
-      return response.json();
-    });
-  }
-
-  useEffect(() => {
-    fetchDog<{ message: string }>("https://dog.ceo/api/breeds/image/random")
-      .then(({ message }) => {
-        setDog(message);
-      })
-      .catch((error) => {
-        return "";
-      });
-  }, []);
-
+export default function GroupChatLink({ name, msgPreview, unreadCount = 0, time, user, groupImage }: Props) {
   return (
     <a className="flex w-full" href="#">
       <li className="flex w-full items-center justify-between">
         <div className="mr-4">
-          <GroupProfile src={dog} unread={unreadCount} />
+          <GroupProfile src={groupImage} unread={unreadCount} />
         </div>
         <div className="inline-block flex-1 overflow-ellipsis overflow-hidden whitespace-nowrap">
           <span className={classNames("block", { "font-bold": unreadCount })}>{name}</span>
